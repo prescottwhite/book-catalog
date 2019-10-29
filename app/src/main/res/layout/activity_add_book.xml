@@ -9,12 +9,20 @@
     tools:context=".AddBook">
 
     <EditText
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/title_hint"
+        android:inputType="textCapWords" />
+
+    <EditText
         android:id="@+id/author_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/author_hint"
-        android:inputType="textPersonName" />
+        android:inputType="textCapWords" />
 
     <EditText
         android:id="@+id/year_text"
@@ -39,15 +47,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/isbn_hint"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/title_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/title_hint"
-        android:inputType="textPersonName" />
+        android:inputType="text" />
 
     <Switch
         android:id="@+id/ebook_switch"
@@ -59,6 +59,7 @@
         android:id="@+id/save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save" />
+        android:text="@string/save"
+        android:textSize="18sp" />
 
 </LinearLayout>
